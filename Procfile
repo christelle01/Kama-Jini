@@ -1,0 +1,1 @@
+web: gunicorn microwork_django.wsgi
