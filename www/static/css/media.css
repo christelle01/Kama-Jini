@@ -8,7 +8,7 @@
     }
 
     .hero-area .block h1 {
-        font-size: 25px;
+        font-size: 30px;
       }
 
       .hero-area .block p {
@@ -26,8 +26,8 @@
     }
     
     @keyframes slidein {
-        0% { margin-left:-10px; }
-        20% { margin-left:-10px; }
+        0% { margin-left:-20px; }
+        20% { margin-left:-20px; }
         35% { margin-left:0px; }
         100% { margin-left:0px; }
     }
@@ -35,9 +35,9 @@
     @keyframes reveal {
         0% {opacity:0;width:0px;}
         20% {opacity:1;width:0px;}
-        30% {width:150px;}
+        30% {width: 180px;;}
         80% {opacity:1;}
-        100% {opacity:0;width:150px;}
+        100% {opacity:0;width:0px;}
     }
     
     .hero-area .block .btn-transparent {
@@ -46,10 +46,19 @@
         border-radius: 3px;
         background-color: #57cbcc;
         border: 1px solid transparent;
-        padding: 4px 10px;
-        font-size: 10px;
+        padding: 6px 20px;
+        font-size: 15px;
         font-weight: bold;
         letter-spacing: 1px;
+    }
+
+    .navbar-toggle {
+        border: 1px solid #57cbcc;
+        border-radius: 0;
+    }
+
+    .navbar-toggle span {
+        background: rgb(0, 0, 0);
     }
 
     .logo img{
@@ -78,6 +87,10 @@
     .call-to-action .btn-main {
         margin-top: 20px;
         font-size: 10px;
+    }
+
+    .text-center p {
+        font-size: 13px;
     }
 
     .btn-main {
@@ -111,7 +124,7 @@
     }
 
     .titree h3, p {
-        font-size: 10px;
+        font-size: 13px;
     }
 
     .titree {
@@ -1059,4 +1072,40 @@
     .links {
         margin-top: 60px;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* #Tablet (Portrait) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.container {
+		width: 768px; 
+	}
+}
+
+/*  #Mobile (Portrait) - Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+	.container { 
+		width: 95%; 
+	}
+	
+	#portfoliolist .portfolio {
+		width:48%;
+		margin:1%;
+	}		
+}
+
+/* #Mobile (Landscape) - Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.container {
+		width: 70%;
+	}
 }

@@ -1015,105 +1015,6 @@ a:focus, a:hover {
 }
 
 /*=================================================================
-  Portfolio section
-==================================================================*/
-.portfolio-filter {
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.portfolio-filter button {
-  border: none;
-  outline: none;
-  border: 1px solid rgba(236, 239, 241, 0.07);
-  background: transparent;
-  display: inline-block;
-  font-size: 16px;
-  padding: 6px 20px;
-  font-weight: 700;
-  color: #737f8a;
-  transition: .3s all;
-}
-
-.portfolio-filter button.mixitup-control-active {
-  border: 1px solid #57cbcc;
-  color: #57cbcc;
-}
-
-.portfolio-items-wrapper .mix {
-  padding: 5px;
-}
-
-.portfolio-block {
-  position: relative;
-}
-
-.portfolio-block:before {
-  transition: all 0.3s ease-in-out;
-  background: white;
-  opacity: 0;
-  top: 20px;
-  right: 20px;
-  bottom: 20px;
-  left: 20px;
-  position: absolute;
-  content: '';
-}
-
-.portfolio-block img {
-  width: 100%;
-  height: auto;
-}
-
-.portfolio-block:hover:before {
-  opacity: 1;
-}
-
-.portfolio-block:hover .caption h4 {
-  top: 45%;
-}
-
-.portfolio-block:hover .caption {
-  opacity: 1;
-  top: 55%;
-}
-
-.portfolio-block .caption {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: 9;
-  transition: all 0.2s ease-in-out;
-  text-align: center;
-}
-
-.portfolio-block .caption h4 {
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.portfolio-block .caption h4 a {
-  color: #555;
-}
-
-.portfolio-block .caption .search-icon {
-  background: #57cbcc;
-  width: 50px;
-  height: 50px;
-  color: #fff;
-  display: inline-block;
-  font-size: 20px;
-  border-radius: 30px;
-}
-
-.portfolio-block .caption .search-icon i {
-  line-height: 50px;
-}
-
-/*=================================================================
   Services section
 ==================================================================*/
 .service-block {
@@ -2792,9 +2693,7 @@ input[type=submit].btn-block{
 
       /* REALISATIONS */
 
-      .realisations{
-        display: flex;
-        flex-direction: column;
+      .realisations{   
         align-items: center;
         background-color: #F5F5F5;
         font-family: Roboto;
@@ -2808,95 +2707,56 @@ input[type=submit].btn-block{
         padding-top: 50px;
       }
 
-      .cadres {
-        margin-top: 50px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 80%;
-      }
-
-      .project {
-        position: relative;
-        float: left;
-        overflow: hidden;
-        margin: 10px 1%;
-        min-width: 320px;
-        max-width: 450px;
-        width: 100%;
-        text-align: center;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-        box-sizing: border-box;
-      }
-
-      .project:hover{
-        cursor: pointer;
-      }
-
-      .project *{
-        transition: all 0.35s ease-in-out;
-      }
-
-      .project img {
-        max-width: 100%;
-        vertical-align: top;
-        height: 310px;
-      }
-
-      .project:hover img {
-        opacity: 0;
-      }
-
-      .titree{
-        width: 80%;
-        height: 90%;
-        position: absolute;
-        top: -100px;
-        left: 10%;
-        color: #01A2AC;
-      }
-
-      .titree h3{
-        color: black;
-      }
-
-      .project:hover .titree{
-        top: 20%;
-      }
-
-      .project:hover .clique{
-        bottom: 20%;
-      }
-
-      .project .clique{
-        position: absolute;
-        bottom: -100px;
-        left: 25%;
-        width: 50%;
-        border: 3px solid #01A2AC;
-        border-radius: 30px;
-        padding: 15px;
-        box-sizing: border-box;
-        transition: all 0.3s ease-in-out;
-      }
-
-      .clique:hover{
-        background-color: #01A2AC;
-        color: #F5F5F5;
-      }
-
-      .clique a {
-        color: blue !important;
-      }
-    
-      .scale{
-        animation: scale 0.5s;
-        animation-fill-mode: forwards;
-      }
-
-      @keyframes scale{
-        from{transform: scale(0);}
-        to{transform: scale(1);}
-      }
+   
 
      
+/* .nav{
+ margin: 5px auto;
+  width: 350px;
+  
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #32673F;
+}
+.nav a{
+  color:  #333;
+} */
+
+.card{
+  border: 1px solid black;
+  margin: 10px 0;
+  border-radius: 5px;
+  color:  #333;
+  text-align: center;
+}
+
+.card:hover{
+ box-shadow: 0 0 25px 5px   grey;
+  cursor: pointer;
+}
+
+.card img{
+ max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 920px){
+  /* .nav{
+    width: 45%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  } */
+
+  .card{
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+  .card img{
+    max-width: 100%;
+    height: auto;
+  }
+}
+                        
+  
