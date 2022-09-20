@@ -10,6 +10,7 @@ body {
   background-color: #353b43;
   font-family: sans-serif;
   color: #737f8a;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -97,7 +98,7 @@ a:focus, a:hover {
 
 .form-control {
   background-color: #2f383d;
-  border-radius: 0;
+  border-radius: 3px;
   padding: 5px 10px;
   border: 0 none;
   color: #ddd;
@@ -502,6 +503,10 @@ a:focus, a:hover {
 /*=================================================================
   Navigation
 ==================================================================*/
+.navbar {
+  border-radius: 0;
+}
+
 .navigation {
   background-color: #fff;
   width: 100%;
@@ -514,8 +519,6 @@ a:focus, a:hover {
   padding: 0;
   margin-top: -50px;
 }
-
-
 
 .navigation .navigation-menu li.active a {
   color: #57cbcc;
@@ -573,11 +576,11 @@ a:focus, a:hover {
 
 .hero-area {
   background-image: url("../images/slider/iStock-880444220.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   height: 100vh;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -631,19 +634,7 @@ a:focus, a:hover {
   letter-spacing: 1px;
 }
 
-.hero-area-video {
-  height: 100vh;
-  position: inherit !important;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
+
 
 .hero-area-video .block {
   color: #fff;
@@ -944,7 +935,7 @@ a:focus, a:hover {
   height: 50px;
   background: rgba(255, 255, 255, 0.6);
   border-color: transparent;
-  border-radius: 20px 0 0 20px;
+  border-radius: 3px 0 0 3px;
 }
 
 
@@ -955,7 +946,7 @@ a:focus, a:hover {
 
 .home-newsletter .single .btn {
   min-height: 50px;
-  border-radius: 0 20px 20px 0;
+  border-radius: 0 3px 3px 0;
   background: #243c4f;
   color: #fff;
 }
@@ -1080,6 +1071,7 @@ a:focus, a:hover {
   border-left: 1px solid;
   border-top: 1px solid;
 }
+
 .bg {
   position: absolute;
   top: 0;
@@ -1149,35 +1141,6 @@ a:focus, a:hover {
   letter-spacing: 2px;
   margin: 0 4px;
 }
-.cf-inner:after {
-  bottom: 20px;
-  right: 20px;
-  border-right: 1px solid;
-  border-bottom: 1px solid;
-}
-
-.content-inner .content-front,
-.content-inner .content-back {
-  position: relative;
-  transform-style: preserve-3d;
-  perspective: 1000px;
-  backface-visibility: hidden;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.content-inner .cf-inner .inner {
-  align-items: stretch;
-  transform-style: preserve-3d;
-  perspective: 1000px;
-  backface-visibility: hidden;
-  transform: translateZ(95px) scale(0.81);
-  text-align: center;
-  position: relative;
-  z-index: 2;
-}
 
 .content-inner:hover .content-front {
   transform: rotateY(-180deg);
@@ -1219,7 +1182,7 @@ a:focus, a:hover {
   background: #00bcd4;
 }
 
-inner:before,
+.cf-inner:before,
 .cf-inner:after {
   content: "";
   position: absolute;
@@ -1748,6 +1711,7 @@ inner:before,
 .social-icon ul li a {
   background-color: #57cbcc;
   border: 1px solid transparent;
+  border-radius: 3px !important;
   display: block;
   height: 50px;
   width: 50px;
@@ -2271,7 +2235,7 @@ input[type=submit] {
   display: inline-block;
   border: 0 solid #ccc;
   box-sizing: border-box;
-  border-radius: 20px;
+  border-radius: 3px;
 
 }
 
