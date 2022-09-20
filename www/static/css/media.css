@@ -895,9 +895,7 @@
         font-size: 35px;
     }
 
-    .links {
-        margin-top: 100px;
-    }
+    
 
     .content-inner .content-front li {
         font-size: 9px;
@@ -1009,9 +1007,6 @@
         font-size: 18px;
     }
 
-    .links {
-        margin-top: 100px;
-    }
 
     .btn-main {
         border-radius: 3px;
@@ -1085,10 +1080,7 @@
         margin-top: -25px;
     }
 
-    .links {
-        margin-top: 70px;
-    }
-
+    
    
 }
 
