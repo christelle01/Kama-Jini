@@ -114,17 +114,7 @@
         height: auto;
     }
 
-    .titree h3 {
-        font-size: 13px;
-    }
-
-    .titree p {
-        font-size: 13px;
-    }
-
-    .titree {
-        margin-top: -20px;
-    }
+   
     .project .clique {
         display: flex;
         margin-left: auto;
@@ -315,13 +305,6 @@
         height: auto;
     }
 
-    .titree h3, p {
-        font-size: 15px;
-    }
-
-    .titree {
-        margin-top: -20px;
-    }
     .project .clique {
         display: flex;
         margin-left: auto;
@@ -489,13 +472,6 @@
           height: auto;
       }
   
-      .titree h3, p {
-          font-size: 15px;
-      }
-  
-      .titree {
-          margin-top: -20px;
-      }
       .project .clique {
           display: flex;
           margin-left: auto;
@@ -651,13 +627,6 @@
         height: auto;
     }
 
-    .titree h3, p {
-        font-size: 20px;
-    }
-
-    .titree {
-        margin-top: -50px;
-    }
     .project .clique {
         display: flex;
         margin-left: auto;
@@ -811,13 +780,6 @@
         height: auto;
     }
 
-    .titree h3, p {
-        font-size: 20px;
-    }
-
-    .titree {
-        margin-top: -50px;
-    }
     .project .clique {
         display: flex;
         margin-left: auto;
@@ -940,13 +902,7 @@
         height: auto;
     }
 
-    .titree h3, p {
-        font-size: 18px;
-    }
-
-    .titree {
-        margin-top: -50px;
-    }
+   
     .project .clique {
         display: flex;
         margin-left: auto;
