@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     
     'newsletters.apps.NewslettersConfig',
+    'letter.apps.LetterConfig',
 
       
 ]

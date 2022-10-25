@@ -23,6 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('www.urls', namespace='www')),
     path('newsletters/',include('newsletters.urls' , namespace='newsletters')),
+    path('letter/',include(('letter.urls', 'letter'), namespace='letter')),
 
     
 
