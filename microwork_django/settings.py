@@ -141,9 +141,9 @@ NEWSLETTER_THUMBNAIL = 'sorl-thumbnail'
 
 ## for sendmail ##
 
-EMAIL_HOST = "smtp.gmail.com"
-EMAIL_HOST_USER = "christellecarmela@gmail.com"
-EMAIL_HOST_PASSWORD = "nntwdrndktjnxykk"
+EMAIL_HOST = "mail56.lwspanel.com"
+EMAIL_HOST_USER = "contact@kamajini.com"
+EMAIL_HOST_PASSWORD = "eX1@DGfgKwTDGnF"
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"

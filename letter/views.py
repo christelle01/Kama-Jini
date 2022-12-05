@@ -10,17 +10,30 @@ from django_pandas.io import read_frame
 
 def index(request):
     if request.method == 'POST':
-        form = SubscibersForm(request.POST)
-        if form.is_valid():
-            form.save()
-            messages.success(request, 'Subscription Successful')
-            return redirect('/')
+        print("Request post")
+    form = SubscibersForm(request.POST)
+    if form.is_valid():
+      form.save()
+      messages.success(request, 'Souscription réussi!')
+      return redirect('/')
     else:
         form = SubscibersForm()
-    context = {
-        'form': form,
-    }
-    return render(request, 'letter/index.html', context)
+    context = {'form':form}
+    template = "letter/index.html"
+    return render(request, template, context)
+
+    # if request.method == 'POST':
+    #     form = SubscibersForm(request.POST)
+    #     if form.is_valid():
+    #         form.save()
+    #         messages.success(request, 'Subscription Successful')
+    #         return redirect('/')
+    # else:
+    #     form = SubscibersForm()
+    # context = {
+    #     'form': form,
+    # }
+    # return render(request, 'letter/index.html', context)
 
 
 def mail_letter(request):
